@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+//========================================
+//
+// common
+//
+//========================================
+
+.ttl {
+	&_main {
+		margin: 50px 0;
+		text-align: center;
+		font-size: 5.4rem;
+		color: #eee;
+		@media #{$middle} {
+		}
+	}
+}
+
+.sf {
+	margin: 50px auto 80px;
+	width: 500px;
+	// border: 1px solid #ccc;
+	font-size: 1.3rem;
+	dl {
+		overflow: hidden;
+	}
+	dt {
+		float: left;
+		width: 80px;
+		line-height: 30px;
+	}
+	dd {
+		overflow: hidden;
+	}
+	input, select {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 10px;
+		border: 1px solid #aaa;
+		border-radius: 4px;
+		background: #FFF;
+		// line-height: 20px;
+	}
+	&_freeword {
+		margin: 0 0 20px;
+		dt {
+			width: 100px;
+		}
+		dd {}
+	}
+	&_status {
+		float: left;
+		width: 240px;
+		margin: 0 30px 20px 0;
+	}
+	&_genre {
+		overflow: hidden;
+		margin: 0 0 20px;
+	}
+	&_label {
+		@extend .sf_status;
+	}
+	&_size {
+		@extend .sf_genre;
+	}
+}
+
+.itemList {
+	margin: 0 auto 150px;
+	max-width: 240px*4 + 30*3;
+	li {
+		margin-bottom: 30px;
+	}
+}
