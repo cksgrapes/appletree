@@ -55,7 +55,8 @@
 				<?php $statusarray = array(
 					'選択しない' => '',
 					'文庫'  => 'bunko',
-					'新書'  => 'shinsho' );
+					'新書'  => 'shinsho',
+					'四六判'  => 'yonroku' );
 				foreach ($statusarray as $key => $value): ?>
 					<option value="<?php echo $value; ?>" <?php echo keep_search_value('select','size',$value); ?>><?php echo $key; ?></option>
 				<?php endforeach ?>
