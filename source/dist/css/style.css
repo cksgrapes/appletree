@@ -206,8 +206,13 @@ sub {
 
 html {
 	font-size: 62.5%;
-	font-family: 'Verdana',"游ゴシック", "YuGothic", sans-serif;
+	font-family: "Verdana", "游ゴシック", w "YuGothic", sans-serif;
 	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin-bottom: 150px;
+	color: #666;
 }
 
 input,
@@ -218,6 +223,7 @@ label {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	color: #666;
 }
 
 a {
@@ -230,6 +236,19 @@ a {
 	font-size: 54px;
 	font-size: 5.4rem;
 	color: #eee;
+}
+
+.ttl_main a {
+	color: #eee;
+}
+
+.sfTrgr {
+	text-align: center;
+	color: #ccc;
+	margin-bottom: 40px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	letter-spacing: 0.3em;
 }
 
 .sf {
@@ -284,12 +303,133 @@ a {
 	margin: 0 0 20px;
 }
 
-.itemList {
-	margin: 0 auto 150px;
+.contents {
 	max-width: 1050px;
+	margin: 0 auto;
+}
+
+.itemList {
+	margin: 0 auto 50px;
+}
+
+.itemList img {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
 }
 
 .itemList li {
+	width: 150px;
 	margin-bottom: 30px;
+}
+
+.bookData {
+	text-align: center;
+}
+
+.bookData_img {
+	margin-bottom: 30px;
+}
+
+.bookData_img img {
+	max-width: 260px;
+	height: auto;
+}
+
+.bookData_ttl {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.bookData_data {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.8;
+}
+
+.notFound {
+	text-align: center;
+	margin: 0 20px;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+.pager {
+	display: none;
+	text-align: center;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+.pager li {
+	display: inline;
+}
+
+.mfp-content {
+	background: #fff;
+	box-sizing: border-box;
+	padding: 50px 30px;
+	max-width: 500px;
+}
+
+#infscr-loading img {
+	width: auto;
+}
+
+@media only screen and (max-width: 520px) {
+
+.ttl_main {
+	margin: 90px 0 50px;
+	font-size: 4.6rem;
+}
+
+.sfTrgr {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	background: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+	color: #aaa;
+	z-index: 9999;
+}
+
+.sf {
+	display: none;
+	box-sizing: border-box;
+	position: fixed;
+	top: 53px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 30px 20px;
+	background: #FFF;
+	border-bottom: 1px solid #ccc;
+	z-index: 9998;
+}
+
+.sf dt {
+	width: 100px;
+}
+
+.sf_status,
+.sf_label {
+	float: none;
+	width: auto;
+	margin: 0 0 10px;
+}
+
+.sf_genre,
+.sf_size {
+	margin: 0 0 10px;
+}
+
+.sf_button {
+	margin-top: 20px;
+}
+
 }
 

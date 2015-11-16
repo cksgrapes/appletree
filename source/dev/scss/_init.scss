@@ -8,12 +8,14 @@
 
 html {
 	font-size: 62.5%;
-	font-family: 'Verdana',"游ゴシック", "YuGothic", sans-serif;
+	font-family: 'Verdana',"游ゴシック", w"YuGothic", sans-serif;
 	-webkit-text-size-adjust: 100%;
 	// font-family: 'Osaka-mono', 'MS Gothic', monospace;
 }
 
 body {
+	margin-bottom: 150px;
+	color: #666;
 }
 
 input, textarea, select, label {
@@ -21,6 +23,7 @@ input, textarea, select, label {
 	 -webkit-appearance:none;
 	 -moz-appearance:none;
 	 appearance:none;
+	color: #666;
 }
 
 a {
