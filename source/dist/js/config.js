@@ -1,8 +1,7 @@
 jQuery(function($){
+
 	$('.gridItem>a').magnificPopup({
-		type: 'ajax',
-		// alignTop: true,
-		// overflowY: 'scroll'
+		type: 'ajax'
 	});
 
 	$('.sfTrgr').on('click', function() {
@@ -17,13 +16,4 @@ jQuery(function($){
 		isFitWidth: true
 	});
 
-	// function gridMasonry() {
-	// 	$('.grid').gridalicious({
-	// 		width: 150,
-	// 		gutter: 30,
-	// 		selector: '.gridItem'
-	// 	});
-	// }
-
-	// gridMasonry();
 });

@@ -77,12 +77,12 @@ gulp.task('extend', function(){
 
 
 gulp.task('scss',function(){
-	return sass('dev/scss',{style : 'expanded'})
+	return sass('dev/scss',{style : 'compressed'})
 		.pipe(cache('scss'))
 		.pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
 		.pipe(cmq({log: true}))
 		.pipe(please({
-			"minifier": false,
+			"minifier": true,
 			'autoprefixer': {
 				browesers: [PLEASE_BROWSERS]
 			}
